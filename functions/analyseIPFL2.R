@@ -1,5 +1,7 @@
+# @author Shaime Belhechmi
+
 ### Working directory ###
-#setwd("...")
+# setwd("...")
 
 ### R packages ###
 library(dplyr)
@@ -11,20 +13,21 @@ library(ipflasso)
  
 
 ### Set a seed ###
-#set.seed(...)
+# set.seed(...)
 
 
-pflist <-
-  list(
-   c(2, rep(1, 19)),
-   c(1, 2, rep(1, 18)),
-   c(rep(1, 10), 2, rep(1, 9)),
-
-   c(2, 2, rep(1, 18)),
-   c(2, rep(1, 9), 2, rep(1, 9)),
-   c(1, 2, rep(1, 8), 2, rep(1, 9)),
-   c(2, 2, rep(1, 8), 2, rep(1, 9))
- )
+### pflist2 ###
+# pflist <-
+#   list(
+#     c(2, rep(1, 19)),
+#     c(1, 2, rep(1, 18)), 
+#     c(rep(1, 10), 2, rep(1, 9)),
+    
+#     c(2, 2, rep(1, 18)),
+#     c(2, rep(1, 9), 2, rep(1, 9)),
+#     c(1, 2, rep(1, 8), 2, rep(1, 9)),
+#     c(2, 2, rep(1, 8), 2, rep(1, 9))
+#   )
 
 nfolds <- 5
 

@@ -11,10 +11,10 @@ library(grpreg)
 
 
 ### Biomarker groups ###
-#group <- c(rep(1:9, each = 25), rep(10:20, each = 75))
+group <- c(rep(1:9, each = 25), rep(10:20, each = 75))
 
 ### Number of PC-cores used ###
-pCores <- #80
+pCores <- 80
 
 ### Definition of the cluster via 'makeCluster' ###
 cl <- makeCluster(pCores, outfile = "OUTcv.grpregGEL.txt")

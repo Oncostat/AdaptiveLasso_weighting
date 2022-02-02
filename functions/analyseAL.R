@@ -31,7 +31,7 @@ library(corpcor)
 library(parallel) 
 
 ### Set a seed ###
-set.seed(...)
+#set.seed(...)
 
  
 ### Number of PC-cores used ###

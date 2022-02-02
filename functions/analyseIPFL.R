@@ -25,10 +25,10 @@ pflist <-
     c(1, 1, rep(2, 8), 1, rep(2, 9))
   )
 
-nfolds = 5
+nfolds <- 5
 
 ### Number of PC-cores used ###
-pCores <- #80
+pCores <- 80
 
 ### Definition of the cluster via 'makeCluster' ###
 cl <- makeCluster(pCores, outfile = "outfilename.txt")
@@ -43,7 +43,7 @@ v <-
     '.Rdata'
   )
 
-set.seed(25845)
+
 analyse <- function(character) {
   load(character)
   source("./functions/ipflasso.R")

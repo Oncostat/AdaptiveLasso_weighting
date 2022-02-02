@@ -1,13 +1,15 @@
-### Working directory
-setwd(" ")
- 
-#####################################################################
-# R packages installation                                           #
-#####################################################################
-library(parallel)
-library(grpreg)
+# @author Shaime Belhechmi
 
-set.seed( )
+### Working directory ###
+#setwd("...")
+
+### R packages ###
+library("parallel")
+library("grpreg")
+ 
+
+### Set a seed ###
+#set.seed(...)
   
 #biomarker groups
 #group <- c(rep(1:9, each = 25), rep(10:20, each = 75))

@@ -1,12 +1,16 @@
-#####################################################################
-# R packages installation                                           #
-#####################################################################
+### Working directory ###
+#setwd("...")
+
+### R packages ###
 library(grpreg)
+ 
 
-set.seed( )
+### Set a seed ###
+#set.seed(...)
 
-#biomarker groups
-# group <- c(rep(1:9, each = 25), rep(10:20, each = 75))
+
+### Biomarker groups ###
+group <- c(rep(1:9, each = 25), rep(10:20, each = 75))
 
 cv.gel <- function(data,
                    # seed,

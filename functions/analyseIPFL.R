@@ -1,17 +1,18 @@
-### Working directory
-setwd(" ")
+### Working directory ###
+#setwd("...")
 
-#####################################################################
-# R packages installation                                           #
-#####################################################################
+### R packages ###
 library(dplyr)
 library(survival) 
 library(Matrix)
 library(corpcor)
 library(parallel)
 library(ipflasso)
+ 
 
-set.seed( )
+### Set a seed ###
+#set.seed(...)
+
 
 pflist <-
   list(
@@ -26,10 +27,10 @@ pflist <-
 
 nfolds = 5
 
-# Number of PC-cores used
+### Number of PC-cores used ###
 pCores <- #80
 
-# Definition of the cluster via 'makeCluster'
+### Definition of the cluster via 'makeCluster' ###
 cl <- makeCluster(pCores, outfile = "outfilename.txt")
 r <- 500
 
@@ -60,7 +61,7 @@ analyse <- function(character) {
   }
 }
 
-# Execution of the program
+### Execution of the program ###
 start <- Sys.time()
 z <- clusterApplyLB(cl = cl, v, analyse)
 end <- Sys.time()

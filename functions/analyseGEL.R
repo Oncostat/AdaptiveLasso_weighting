@@ -1,17 +1,17 @@
+# @author Shaime Belhechmi
+
 ### Working directory ###
 #setwd("...")
 
 ### R packages ###
-library(parallel)
 library(grpreg)
- 
 
 ### Set a seed ###
 #set.seed(...)
 
 
 ### Biomarker groups ###
-group <- c(rep(1:9, each = 25), rep(10:20, each = 75))
+#group <- c(rep(1:9, each = 25), rep(10:20, each = 75))
 
 ### Number of PC-cores used ###
 pCores <- 80

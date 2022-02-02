@@ -12,7 +12,7 @@ library(grpreg)
 
 
 ### Biomarker groups ###
-group <- c(rep(1:9, each = 25), rep(10:20, each = 75))
+#group <- c(rep(1:9, each = 25), rep(10:20, each = 75))
 
 cv.cMCP <- function(data,
                     # seed,

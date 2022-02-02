@@ -20,7 +20,7 @@
 ############################################################################################
 
 ### Working directory ###
-#setwd("./R code Simulation article/")
+#setwd("...")
 
 ### R packages ###
 library(dplyr)
@@ -31,7 +31,7 @@ library(corpcor)
 library(parallel) 
 
 ### Set a seed ###
-set.seed( )
+set.seed(...)
 
  
 ### Number of PC-cores used ###

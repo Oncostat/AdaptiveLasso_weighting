@@ -1,7 +1,13 @@
-#####################################################################
-# R packages installation                                           #
-#####################################################################
+### Working directory ###
+#setwd("...")
+
+### R packages ###
 library(ipflasso)
+ 
+
+### Set a seed ###
+#set.seed(...)
+
 
 pflist <-
   list(
@@ -15,7 +21,7 @@ pflist <-
     c(2, 2, rep(1, 8), 2, rep(1, 9))
   )
 
-nfolds = 5
+nfolds <- 5
 
 ipf.lasso2 <- function(data, pflist, nfolds) {
   biom <- grep("bm", names(data))

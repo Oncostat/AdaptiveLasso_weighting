@@ -1,3 +1,5 @@
+# @author Shaime Belhechmi
+
 #########################################################################
 
 ###     Simulation function for survival data with biomarkers         ###

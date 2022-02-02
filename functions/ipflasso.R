@@ -1,24 +1,27 @@
+# @author Shaime Belhechmi
+
 ### Working directory ###
-#setwd("...")
+# setwd("...")
 
 ### R packages ###
 library(ipflasso)
  
 
 ### Set a seed ###
-#set.seed(...)
+# set.seed(...)
 
 
-pflist <-
-  list(
-    c(1, rep(2, 19)),
-    c(2, 1, rep(2, 18)),
-    c(rep(2, 10), 1, rep(2, 9)),
-    c(1, 1, rep(2, 18)),
-    c(1, rep(2, 9), 1, rep(2, 9)),
-    c(2, 1, rep(2, 8), 1, rep(2, 9)),
-    c(1, 1, rep(2, 8), 1, rep(2, 9))
-  )
+### pflist1 ###
+# pflist <-
+#   list(
+#     c(1, rep(2, 19)),
+#     c(2, 1, rep(2, 18)),
+#     c(rep(2, 10), 1, rep(2, 9)),
+#     c(1, 1, rep(2, 18)),
+#     c(1, rep(2, 9), 1, rep(2, 9)),
+#     c(2, 1, rep(2, 8), 1, rep(2, 9)),
+#     c(1, 1, rep(2, 8), 1, rep(2, 9))
+#   )
 
 
 nfolds <- 5
@@ -38,26 +41,26 @@ ipf.lasso <- function(data, pflist, nfolds) {
       type.measure = "deviance",
       standardize = FALSE,
       blocks = list(
-        block1 = 1:25,
-        block2 = 26:50,
-        block3 = 51:75,
-        block4 = 76:100,
-        block5 = 101:125,
-        block6 = 126:150,
-        block7 = 151:175,
-        block8 = 176:200,
-        block9 = 201:225,
-        block10 = 226:250,
-        block11 = 251:325,
-        block12 = 326:400,
-        block13 = 401:475,
-        block14 = 476:550,
-        block15 = 551:625,
-        block16 = 626:700,
-        block17 = 701:775,
-        block18 = 776:850,
-        block19 = 851:925,
-        block20 = 926:1000
+#         block1 = 1:25,
+#         block2 = 26:50,
+#         block3 = 51:75,
+#         block4 = 76:100,
+#         block5 = 101:125,
+#         block6 = 126:150,
+#         block7 = 151:175,
+#         block8 = 176:200,
+#         block9 = 201:225,
+#         block10 = 226:250,
+#         block11 = 251:325,
+#         block12 = 326:400,
+#         block13 = 401:475,
+#         block14 = 476:550,
+#         block15 = 551:625,
+#         block16 = 626:700,
+#         block17 = 701:775,
+#         block18 = 776:850,
+#         block19 = 851:925,
+#         block20 = 926:1000
       ),
       pflist = pflist,
       nfolds = nfolds,

@@ -1,14 +1,14 @@
 ### Working directory ###
-#setwd(" ")
+#setwd("...")
 
-#####################################################################
-# R packages installation                                           #
-#####################################################################
+### R packages ###
 library(parallel)
 library(grpreg)
+ 
 
 ### Set a seed ###
 #set.seed(...)
+
 
 ### Biomarker groups ###
 #group <- c(rep(1:9, each = 25), rep(10:20, each = 75))

@@ -35,7 +35,7 @@ library(parallel)
 
  
 ### Number of PC-cores used ###
-pCores <- #80
+pCores <- 80
 
 ### Definition of the cluster via 'makeCluster' ###
 cl <- makeCluster(pCores, outfile ="OUTanalyseAL.txt")

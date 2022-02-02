@@ -1,10 +1,12 @@
-#####################################################################
-# R packages installation                                           #
-#####################################################################
-library(SGL)
+### Working directory ###
+#setwd("...")
+
+### R packages ###
+library(SGL) 
 
 ### Set a seed ###
 #set.seed(...)
+
 
 #Index of biomarker groups
 # index <- c(rep(1:9, each = 25), rep(10:20, each = 75))

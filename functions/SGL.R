@@ -3,7 +3,8 @@
 #####################################################################
 library(SGL)
 
-set.seed( )
+### Set a seed ###
+#set.seed(...)
 
 #Index of biomarker groups
 # index <- c(rep(1:9, each = 25), rep(10:20, each = 75))

@@ -1,3 +1,5 @@
+# @author Shaime Belhechmi
+
 ############################
 
 ### Generation of data   ###

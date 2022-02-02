@@ -1,3 +1,5 @@
+# @author Shaime Belhechmi
+
 ########################################################################################
 ### Global function for the selection of biomarkers belonging to prespecified groups ###
 ########################################################################################

@@ -35,7 +35,7 @@ pCores <- 80
 cl <- makeCluster(pCores, outfile ="outfilename.txt")
 r <- 500
 
-v <- paste0('.../datas/scen',rep(1:8,each=r),'/simdata-',sprintf("%03d",c(1:r)),'.Rdata')
+v <- paste0('./datas/scen',rep(1:8,each=r),'/simdata-',sprintf("%03d",c(1:r)),'.Rdata')
 
 set.seed(258452)
 analyse <- function(character){
